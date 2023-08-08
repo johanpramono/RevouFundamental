@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            table, th, td {
+                border: 1px solid black
+
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Unordered List</h1>
+        <!-- ul = unordered list, bullet point-->
+        <ul type="disc">
+            <li>Apel</li>
+            <li>Pisang</li>
+            <li>Mangga</li>
+            <li>Jambu</li>
+        </ul>
+
+        <!-- ol = ordered list, numbering-->
+        <h1>Ordered List</h1>
+        <ol type="1">
+            <li>Apel</li>
+            <li>Pisang</li>
+            <ol type="a">
+                <li>Pisang Ambon</li>
+                <li>Pisang Raja</li>
+                <li>Pisang Keju</li>
+            </ol>
+            <li>Mangga</li>
+            <li>Jambu</li>
+        </ol>
+
+        <!-- Table-->
+        <h1>Table</h1>
+        <table>
+            <tr> <!-- tr = table row-->
+                <th>Company</th> <!-- th = table header -->
+                <th>Contact</th>
+                <th>Country</th>
+            </tr>
+            <tr>
+                <td>SSMC</td> <!-- td = table data -->
+                <td>Andy</td>
+                <td>SG</td>
+            </tr>
+            <tr>
+                <td>Revou</td>
+                <td>Dea</td>
+                <td>Indonesia</td>
+            </tr>
+        </table>
+        <br>
+        <table>
+            <tr>
+                <th>Asal</th>
+                <th>Domisili</th>
+            </tr>
+            <tr>
+                <td colspan="2">Indonesia</td>
+            </tr>
+        </table>
+        
+        <!-- img = image-->
+        <img src="https://terasjabar.id/photo/plugin/article/2023/1674697815_1-org.jpg" alt="bang messi"> <!-- alt = img desc, used by search engine -->
+        
+        <!-- a = anchor, href = hyperlink-->
+        <p>
+            <a href="https://www.google.com/" target="_blank">Link ke google</a><!-- target = "_blank" = open to new tab-->
+        </p>
+
+        <!--form-->
+        <form>
+            <label for ="name">Name:</label>
+            <input name="name" type="text">
+            <br>
+            <label for ="phone">Phone:</label>
+            <input name="phone" type="number">
+            <br>
+            <input type="submit" value="OK">
+            <br>
+            <button type="button">OK</button>
+            <button type="button" onclick="doSomething();">Apply</button>
+        </form>
+        <br>
+        <select>
+            <option>Merah</option>
+            <option>Kuning</option>
+            <option>Hijau</option>
+        </select>
+        <br>
+        <br>
+        <fieldset>
+            <legend>Data Diri</legend>
+            <label for ="name">Name:</label>
+            <input name="name" type="text">
+            <br>
+            <label for ="phone">Phone:</label>
+            <input name="phone" type="number">
+        </fieldset>
+        <br>
+
+        <b>Ini tulisan bold</b> <!-- penting -->
+        <strong>Ini juga tulisan bold</strong> <!-- lebih penting dari b, ditekankan oleh screen reader, untuk SEO lbh penting-->
+
+        <div></div> <!-- pembagian non semantic, atas ke bawah -->
+        <span></span> <!-- pembagian non semantic, kiri ke kanan -->
+        
+    </body>
+</html>
